@@ -15,10 +15,7 @@ struct string {
 };
 
 void reset(struct string *str) {
-    free(str->buf);
-    str->buf = 0;
     str->size = 0;
-    str->cap = 0;
 }
 
 void append(struct string *str, char ch) {
